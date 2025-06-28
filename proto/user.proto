@@ -1,0 +1,19 @@
+syntax = "proto3";
+package user;
+
+message UserReply {
+  string message = 1;
+}
+
+message UserRequestFindOne {
+  string name = 1;
+}
+
+message UserRequestFindAll {
+  string name = 1;
+}
+
+service UserService {
+  rpc MyMethod (UserRequestFindOne) returns (UserReply);
+  rpc MyMethod2 (UserRequestFindAll) returns (UserReply);
+}

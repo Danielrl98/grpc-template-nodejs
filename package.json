@@ -1,0 +1,28 @@
+{
+  "name": "proto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npx tsx src/server/server.ts",
+    "build": "npx yarn tsc -b",
+    "client": "npx tsx src/client/client.ts",
+    "web": "npx tsx src/client/client-web.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "@grpc/proto-loader": "^0.7.15",
+    "google-protobuf": "^3.21.4",
+    "grpc-tools": "^1.13.0"
+  },
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "yarn": "^1.22.22"
+  }
+}
