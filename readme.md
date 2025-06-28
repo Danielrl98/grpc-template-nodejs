@@ -1,6 +1,9 @@
-$ npx yarn install
+Install template
 
+```
+$ npx yarn install
 $ npx yarn build
+```
 
 SERVER:
 
